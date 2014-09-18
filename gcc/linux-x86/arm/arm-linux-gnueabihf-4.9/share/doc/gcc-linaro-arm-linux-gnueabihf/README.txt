@@ -1,4 +1,4 @@
-Linaro Toolchain 2014.07
+Linaro Toolchain 2014.08
 ========================
 
 This package contains pre-built versions of Linaro GCC and Linaro GDB
@@ -19,7 +19,7 @@ easier.
 
 What's included
 ---------------
- * Linaro GCC 4.9 2014.07
+ * Linaro GCC 4.9 2014.08
  * Linaro GDB 7.6.1 2013.10
  * A statically linked gdbserver in arm-linux-gnueabihf/debug-root
  * A system root
@@ -51,7 +51,7 @@ The default configuration is:
  * 'hard float' calling convention
  * Uses the VFPv3-D16 FPU
  * Multiarch and multilib enabled
- * 2.19 2014.07
+ * 2.19 2014.08
  * A GCC 4.8 series libgcc and libstdc++
 
 For more information on the LEB, see the Linaro Wiki at

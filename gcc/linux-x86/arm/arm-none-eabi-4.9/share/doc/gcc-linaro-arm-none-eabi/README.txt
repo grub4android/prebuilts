@@ -1,4 +1,4 @@
-Linaro Toolchain 2014.07
+Linaro Toolchain 2014.08
 ========================
 
 This package contains pre-built versions of Linaro GCC and Linaro GDB
@@ -19,7 +19,7 @@ easier.
 
 What's included
 ---------------
- * Linaro GCC 4.9 2014.07
+ * Linaro GCC 4.9 2014.08
  * Linaro GDB 7.6.1 2013.10
  * A system root
  * Manuals under share/doc/

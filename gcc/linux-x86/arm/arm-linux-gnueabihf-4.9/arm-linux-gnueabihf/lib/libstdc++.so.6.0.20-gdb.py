@@ -19,7 +19,7 @@ import gdb
 import os
 import os.path
 
-pythondir = '/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/share/gcc-4.9.1/python'
+pythondir = '/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/share/gcc-4.9.2/python'
 libdir = '/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/lib'
 
 # This file might be loaded when there is no current objfile.  This

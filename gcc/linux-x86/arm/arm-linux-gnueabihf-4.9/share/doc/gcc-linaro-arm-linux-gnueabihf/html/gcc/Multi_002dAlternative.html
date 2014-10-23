@@ -55,7 +55,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Constraints.html#Constraints">Constrain
 
 <h4 class="subsection">6.42.2 Multiple Alternative Constraints</h4>
 
-<p><a name="index-multiple-alternative-constraints-3114"></a>
+<p><a name="index-multiple-alternative-constraints-3133"></a>
 Sometimes a single instruction has multiple alternative sets of possible
 operands.  For example, on the 68000, a logical-or instruction can combine
 register or an immediate value into memory, or it can combine any kind of
@@ -77,14 +77,14 @@ need the same amount of copying, the one that comes first is chosen.
 These choices can be altered with the &lsquo;<samp><span class="samp">?</span></samp>&rsquo; and &lsquo;<samp><span class="samp">!</span></samp>&rsquo; characters:
 
      
-<a name="index-g_t_0040samp_007b_003f_007d-in-constraint-3115"></a>
-<a name="index-question-mark-3116"></a>
+<a name="index-g_t_0040samp_007b_003f_007d-in-constraint-3134"></a>
+<a name="index-question-mark-3135"></a>
 <dl><dt><code>?</code><dd>Disparage slightly the alternative that the &lsquo;<samp><span class="samp">?</span></samp>&rsquo; appears in,
 as a choice when no alternative applies exactly.  The compiler regards
 this alternative as one unit more costly for each &lsquo;<samp><span class="samp">?</span></samp>&rsquo; that appears
 in it.
 
-     <p><a name="index-g_t_0040samp_007b_0021_007d-in-constraint-3117"></a><a name="index-exclamation-point-3118"></a><br><dt><code>!</code><dd>Disparage severely the alternative that the &lsquo;<samp><span class="samp">!</span></samp>&rsquo; appears in. 
+     <p><a name="index-g_t_0040samp_007b_0021_007d-in-constraint-3136"></a><a name="index-exclamation-point-3137"></a><br><dt><code>!</code><dd>Disparage severely the alternative that the &lsquo;<samp><span class="samp">!</span></samp>&rsquo; appears in. 
 This alternative can still be used if it fits without reloading,
 but if reloading is needed, some other alternative will be used. 
 </dl>

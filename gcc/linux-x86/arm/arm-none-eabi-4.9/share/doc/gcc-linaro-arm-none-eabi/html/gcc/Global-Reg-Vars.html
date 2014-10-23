@@ -52,7 +52,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Explicit-Reg-Vars.html#Explicit-Reg-Var
 
 <h4 class="subsection">6.44.1 Defining Global Register Variables</h4>
 
-<p><a name="index-global-register-variables-3137"></a><a name="index-registers_002c-global-variables-in-3138"></a>
+<p><a name="index-global-register-variables-3156"></a><a name="index-registers_002c-global-variables-in-3157"></a>
 You can define a global register variable in GNU C like this:
 
 <pre class="smallexample">     register int *foo asm ("a5");
@@ -88,7 +88,7 @@ handlers, or from more than one thread of control, because the system
 library routines may temporarily use the register for other things (unless
 you recompile them specially for the task at hand).
 
- <p><a name="index-g_t_0040code_007bqsort_007d_002c-and-global-register-variables-3139"></a>It is not safe for one function that uses a global register variable to
+ <p><a name="index-g_t_0040code_007bqsort_007d_002c-and-global-register-variables-3158"></a>It is not safe for one function that uses a global register variable to
 call another such function <code>foo</code> by way of a third function
 <code>lose</code> that is compiled without knowledge of this variable (i.e. in a
 different source file in which the variable isn't declared).  This is
@@ -112,7 +112,7 @@ Therefore, the function that is the entry point into the part of the
 program that uses the global register variable must explicitly save and
 restore the value that belongs to its caller.
 
- <p><a name="index-register-variable-after-_0040code_007blongjmp_007d-3140"></a><a name="index-global-register-after-_0040code_007blongjmp_007d-3141"></a><a name="index-value-after-_0040code_007blongjmp_007d-3142"></a><a name="index-longjmp-3143"></a><a name="index-setjmp-3144"></a>On most machines, <code>longjmp</code> restores to each global register
+ <p><a name="index-register-variable-after-_0040code_007blongjmp_007d-3159"></a><a name="index-global-register-after-_0040code_007blongjmp_007d-3160"></a><a name="index-value-after-_0040code_007blongjmp_007d-3161"></a><a name="index-longjmp-3162"></a><a name="index-setjmp-3163"></a>On most machines, <code>longjmp</code> restores to each global register
 variable the value it had at the time of the <code>setjmp</code>.  On some
 machines, however, <code>longjmp</code> does not change the value of global
 register variables.  To be portable, the function that called <code>setjmp</code>

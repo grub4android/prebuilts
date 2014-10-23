@@ -59,6 +59,8 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>EADDRINUSE</code><dd>Address already in use
 
+     <br><dt><code>EADDRNOTAVAIL</code><dd>Address not available
+
      <br><dt><code>EADV</code><dd>Advertise error
 
      <br><dt><code>EAFNOSUPPORT</code><dd>Address family not supported by protocol family
@@ -73,6 +75,8 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>EBUSY</code><dd>Device or resource busy
 
+     <br><dt><code>ECANCELED</code><dd>Operation canceled
+
      <br><dt><code>ECHILD</code><dd>No children
 
      <br><dt><code>ECOMM</code><dd>Communication error
@@ -81,13 +85,15 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>ECONNREFUSED</code><dd>Connection refused
 
+     <br><dt><code>ECONNRESET</code><dd>Connection reset by peer
+
      <br><dt><code>EDEADLK</code><dd>Deadlock
 
      <br><dt><code>EDESTADDRREQ</code><dd>Destination address required
 
      <br><dt><code>EEXIST</code><dd>File exists
 
-     <br><dt><code>EDOM</code><dd>Math argument
+     <br><dt><code>EDOM</code><dd>Mathematics argument out of domain of function
 
      <br><dt><code>EFAULT</code><dd>Bad address
 
@@ -98,6 +104,8 @@ for each of the values defined in `<code>errno.h</code>':
      <br><dt><code>EHOSTUNREACH</code><dd>Host is unreachable
 
      <br><dt><code>EIDRM</code><dd>Identifier removed
+
+     <br><dt><code>EILSEQ</code><dd>Illegal byte sequence
 
      <br><dt><code>EINPROGRESS</code><dd>Connection already in progress
 
@@ -121,7 +129,7 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>ELIBSCN</code><dd><code>.lib</code> section in a.out corrupted
 
-     <br><dt><code>EMFILE</code><dd>Too many open files
+     <br><dt><code>EMFILE</code><dd>File descriptor value too large
 
      <br><dt><code>EMLINK</code><dd>Too many links
 
@@ -131,11 +139,17 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>ENAMETOOLONG</code><dd>File or path name too long
 
-     <br><dt><code>ENETDOWN</code><dd>Network interface not configured
+     <br><dt><code>ENETDOWN</code><dd>Network interface is not configured
+
+     <br><dt><code>ENETRESET</code><dd>Connection aborted by network
 
      <br><dt><code>ENETUNREACH</code><dd>Network is unreachable
 
      <br><dt><code>ENFILE</code><dd>Too many open files in system
+
+     <br><dt><code>ENOBUFS</code><dd>No buffer space available
+
+     <br><dt><code>ENODATA</code><dd>No data
 
      <br><dt><code>ENODEV</code><dd>No such device
 
@@ -173,6 +187,8 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>ENOTEMPTY</code><dd>Directory not empty
 
+     <br><dt><code>ENOTRECOVERABLE</code><dd>State not recoverable
+
      <br><dt><code>ENOTSOCK</code><dd>Socket operation on non-socket
 
      <br><dt><code>ENOTSUP</code><dd>Not supported
@@ -180,6 +196,12 @@ for each of the values defined in `<code>errno.h</code>':
      <br><dt><code>ENOTTY</code><dd>Not a character device
 
      <br><dt><code>ENXIO</code><dd>No such device or address
+
+     <br><dt><code>EOPNOTSUPP</code><dd>Operation not supported on socket
+
+     <br><dt><code>EOVERFLOW</code><dd>Value too large for defined data type
+
+     <br><dt><code>EOWNERDEAD</code><dd>Previous owner died
 
      <br><dt><code>EPERM</code><dd>Not owner
 
@@ -207,21 +229,17 @@ for each of the values defined in `<code>errno.h</code>':
 
      <br><dt><code>ESRMNT</code><dd>Srmount error
 
+     <br><dt><code>ESTRPIPE</code><dd>Strings pipe error
+
      <br><dt><code>ETIME</code><dd>Stream ioctl timeout
 
      <br><dt><code>ETIMEDOUT</code><dd>Connection timed out
 
      <br><dt><code>ETXTBSY</code><dd>Text file busy
 
+     <br><dt><code>EWOULDBLOCK</code><dd>Operation would block (usually same as EAGAIN)
+
      <br><dt><code>EXDEV</code><dd>Cross-device link
-
-     <br><dt><code>ECANCELED</code><dd>Operation canceled
-
-     <br><dt><code>ENOTRECOVERABLE</code><dd>State not recoverable
-
-     <br><dt><code>EOWNERDEAD</code><dd>Previous owner died
-
-     <br><dt><code>ESTRPIPE</code><dd>Strings pipe error
 
    </dl>
 

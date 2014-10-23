@@ -55,7 +55,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Pragmas.html#Pragmas">Pragmas</a>
 <h4 class="subsection">6.59.13 Function Specific Option Pragmas</h4>
 
      <dl>
-<dt><code>#pragma GCC target (</code><var>"string"</var><code>...)</code><dd><a name="index-pragma-GCC-target-3776"></a>
+<dt><code>#pragma GCC target (</code><var>"string"</var><code>...)</code><dd><a name="index-pragma-GCC-target-3795"></a>
 This pragma allows you to set target specific options for functions
 defined later in the source file.  One or more strings can be
 specified.  Each function that is defined after this point is as
@@ -69,7 +69,7 @@ i386/x86_64, PowerPC, and Nios II targets only.
 </dl>
 
      <dl>
-<dt><code>#pragma GCC optimize (</code><var>"string"</var><code>...)</code><dd><a name="index-pragma-GCC-optimize-3777"></a>
+<dt><code>#pragma GCC optimize (</code><var>"string"</var><code>...)</code><dd><a name="index-pragma-GCC-optimize-3796"></a>
 This pragma allows you to set global optimization options for functions
 defined later in the source file.  One or more strings can be
 specified.  Each function that is defined after this point is as
@@ -83,7 +83,7 @@ versions earlier than 4.4.
 </dl>
 
      <dl>
-<dt><code>#pragma GCC push_options</code><dt><code>#pragma GCC pop_options</code><dd><a name="index-pragma-GCC-push_005foptions-3778"></a><a name="index-pragma-GCC-pop_005foptions-3779"></a>
+<dt><code>#pragma GCC push_options</code><dt><code>#pragma GCC pop_options</code><dd><a name="index-pragma-GCC-push_005foptions-3797"></a><a name="index-pragma-GCC-pop_005foptions-3798"></a>
 These pragmas maintain a stack of the current target and optimization
 options.  It is intended for include files where you temporarily want
 to switch to using a different &lsquo;<samp><span class="samp">#pragma GCC target</span></samp>&rsquo; or
@@ -95,7 +95,7 @@ pragmas are not implemented in GCC versions earlier than 4.4.
 </dl>
 
      <dl>
-<dt><code>#pragma GCC reset_options</code><dd><a name="index-pragma-GCC-reset_005foptions-3780"></a>
+<dt><code>#pragma GCC reset_options</code><dd><a name="index-pragma-GCC-reset_005foptions-3799"></a>
 This pragma clears the current <code>#pragma GCC target</code> and
 <code>#pragma GCC optimize</code> to use the default switches as specified
 on the command line.

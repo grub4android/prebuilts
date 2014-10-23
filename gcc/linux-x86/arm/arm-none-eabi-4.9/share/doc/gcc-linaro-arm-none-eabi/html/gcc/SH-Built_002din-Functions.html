@@ -59,7 +59,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Target-Builtins.html#Target-Builtins">T
 families of processors:
 
 <div class="defun">
-&mdash; Built-in Function: void <b>__builtin_set_thread_pointer</b> (<var>void *ptr</var>)<var><a name="index-g_t_005f_005fbuiltin_005fset_005fthread_005fpointer-3746"></a></var><br>
+&mdash; Built-in Function: void <b>__builtin_set_thread_pointer</b> (<var>void *ptr</var>)<var><a name="index-g_t_005f_005fbuiltin_005fset_005fthread_005fpointer-3765"></a></var><br>
 <blockquote><p>Sets the &lsquo;<samp><span class="samp">GBR</span></samp>&rsquo; register to the specified value <var>ptr</var>.  This is usually
 used by system code that manages threads and execution contexts.  The compiler
 normally does not generate code that modifies the contents of &lsquo;<samp><span class="samp">GBR</span></samp>&rsquo; and
@@ -70,7 +70,7 @@ value in user code must be done with caution, since the compiler might use
       </blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: void * <b>__builtin_thread_pointer</b> (<var>void</var>)<var><a name="index-g_t_005f_005fbuiltin_005fthread_005fpointer-3747"></a></var><br>
+&mdash; Built-in Function: void * <b>__builtin_thread_pointer</b> (<var>void</var>)<var><a name="index-g_t_005f_005fbuiltin_005fthread_005fpointer-3766"></a></var><br>
 <blockquote><p>Returns the value that is currently set in the &lsquo;<samp><span class="samp">GBR</span></samp>&rsquo; register. 
 Memory loads and stores that use the thread pointer as a base address are
 turned into &lsquo;<samp><span class="samp">GBR</span></samp>&rsquo; based displacement loads and stores, if possible. 

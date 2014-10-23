@@ -52,7 +52,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Constraints.html#Constraints">Constrain
 
 <h4 class="subsection">6.42.4 Constraints for Particular Machines</h4>
 
-<p><a name="index-machine-specific-constraints-3128"></a><a name="index-constraints_002c-machine-specific-3129"></a>
+<p><a name="index-machine-specific-constraints-3147"></a><a name="index-constraints_002c-machine-specific-3148"></a>
 Whenever possible, you should use the general-purpose constraint letters
 in <code>asm</code> arguments, since they will convey meaning more readily to
 people reading your code.  Failing that, use the constraint letters
@@ -393,6 +393,14 @@ constant + offset).
 
           <br><dt><code>wg</code><dd>If <samp><span class="option">-mmfpgpr</span></samp> was used, a floating point register or NO_REGS.
 
+          <br><dt><code>wh</code><dd>Floating point register if direct moves are available, or NO_REGS.
+
+          <br><dt><code>wi</code><dd>FP or VSX register to hold 64-bit integers for VSX insns or NO_REGS.
+
+          <br><dt><code>wj</code><dd>FP or VSX register to hold 64-bit integers for direct moves or NO_REGS.
+
+          <br><dt><code>wk</code><dd>FP or VSX register to hold 64-bit doubles for direct moves or NO_REGS.
+
           <br><dt><code>wl</code><dd>Floating point register if the LFIWAX instruction is enabled or NO_REGS.
 
           <br><dt><code>wm</code><dd>VSX register if direct move instructions are enabled, or NO_REGS.
@@ -413,7 +421,7 @@ constant + offset).
 
           <br><dt><code>wx</code><dd>Floating point register if the STFIWX instruction is enabled or NO_REGS.
 
-          <br><dt><code>wy</code><dd>VSX vector register to hold scalar float values or NO_REGS.
+          <br><dt><code>wy</code><dd>FP or VSX register to perform ISA 2.07 float ops or NO_REGS.
 
           <br><dt><code>wz</code><dd>Floating point register if the LFIWZX instruction is enabled or NO_REGS.
 

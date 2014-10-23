@@ -90,7 +90,7 @@ information about the intentions of the programmer.  For functions
 where the return value should never be ignored, use the
 <code>warn_unused_result</code> function attribute (see <a href="Function-Attributes.html#Function-Attributes">Function Attributes</a>).
 
-     <li><a name="index-fshort_002denums-3878"></a>Making <samp><span class="option">-fshort-enums</span></samp> the default.
+     <li><a name="index-fshort_002denums-3897"></a>Making <samp><span class="option">-fshort-enums</span></samp> the default.
 
      <p>This would cause storage layout to be incompatible with most other C
 compilers.  And it doesn't seem very important, given that you can get
@@ -105,7 +105,7 @@ ABI standard&rdquo; says to do so.
 declared plain <code>int</code> is signed or not.  This in effect creates two
 alternative dialects of C.
 
-     <p><a name="index-fsigned_002dbitfields-3879"></a><a name="index-funsigned_002dbitfields-3880"></a>The GNU C compiler supports both dialects; you can specify the signed
+     <p><a name="index-fsigned_002dbitfields-3898"></a><a name="index-funsigned_002dbitfields-3899"></a>The GNU C compiler supports both dialects; you can specify the signed
 dialect with <samp><span class="option">-fsigned-bitfields</span></samp> and the unsigned dialect with
 <samp><span class="option">-funsigned-bitfields</span></samp>.  However, this leaves open the question of
 which dialect to use by default.
@@ -153,7 +153,7 @@ to be considered in the future.
 explicitly in each bit-field whether it is signed or not.  In this way,
 they write programs which have the same meaning in both C dialects.)
 
-     <li><a name="index-ansi-3881"></a><a name="index-std-3882"></a>Undefining <code>__STDC__</code> when <samp><span class="option">-ansi</span></samp> is not used.
+     <li><a name="index-ansi-3900"></a><a name="index-std-3901"></a>Undefining <code>__STDC__</code> when <samp><span class="option">-ansi</span></samp> is not used.
 
      <p>Currently, GCC defines <code>__STDC__</code> unconditionally.  This provides
 good results in practice.
@@ -241,7 +241,7 @@ that summation, so the accumulation can be removed.
 
      <li>Making side effects happen in the same order as in some other compiler.
 
-     <p><a name="index-side-effects_002c-order-of-evaluation-3883"></a><a name="index-order-of-evaluation_002c-side-effects-3884"></a>It is never safe to depend on the order of evaluation of side effects. 
+     <p><a name="index-side-effects_002c-order-of-evaluation-3902"></a><a name="index-order-of-evaluation_002c-side-effects-3903"></a>It is never safe to depend on the order of evaluation of side effects. 
 For example, a function call like this may very well behave differently
 from one compiler to another:
 
@@ -260,7 +260,7 @@ arguments &lsquo;<samp><span class="samp">2, 3</span></samp>&rsquo;, or it might
      <p>Some ISO C testsuites report failure when the compiler does not produce
 an error message for a certain program.
 
-     <p><a name="index-pedantic_002derrors-3885"></a>ISO C requires a &ldquo;diagnostic&rdquo; message for certain kinds of invalid
+     <p><a name="index-pedantic_002derrors-3904"></a>ISO C requires a &ldquo;diagnostic&rdquo; message for certain kinds of invalid
 programs, but a warning is defined by GCC to count as a diagnostic.  If
 GCC produces a warning but not an error, that is correct ISO C support. 
 If testsuites call this &ldquo;failure&rdquo;, they should be run with the GCC

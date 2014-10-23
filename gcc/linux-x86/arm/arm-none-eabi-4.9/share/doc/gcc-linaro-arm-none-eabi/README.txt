@@ -1,4 +1,4 @@
-Linaro Toolchain 2014.08
+Linaro Toolchain 2014.09
 ========================
 
 This package contains pre-built versions of Linaro GCC and Linaro GDB
@@ -19,7 +19,7 @@ easier.
 
 What's included
 ---------------
- * Linaro GCC 4.9 2014.08
+ * Linaro GCC 4.9 2014.09
  * Linaro GDB 7.6.1 2013.10
  * A system root
  * Manuals under share/doc/
@@ -41,7 +41,7 @@ https://wiki.linaro.org/GettingInvolved.
 Target compatibility
 --------------------
 The default configuration is:
- * 2.1.0 2014.02
+ * 2.1.0 2014.09
  * A GCC 4.8 series libgcc and libstdc++
 
 Host compatibility

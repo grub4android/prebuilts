@@ -52,7 +52,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="C-Extensions.html#C-Extensions">C Exten
 
 <h3 class="section">6.1 Statements and Declarations in Expressions</h3>
 
-<p><a name="index-statements-inside-expressions-2644"></a><a name="index-declarations-inside-expressions-2645"></a><a name="index-expressions-containing-statements-2646"></a><a name="index-macros_002c-statements-in-expressions-2647"></a>
+<p><a name="index-statements-inside-expressions-2663"></a><a name="index-declarations-inside-expressions-2664"></a><a name="index-expressions-containing-statements-2665"></a><a name="index-macros_002c-statements-in-expressions-2666"></a>
 <!-- the above section title wrapped and causes an underfull hbox.. i -->
 <!-- changed it from "within" to "in". -mew 4feb93 -->
 A compound statement enclosed in parentheses may appear as an expression
@@ -84,7 +84,7 @@ follows:
 
 <pre class="smallexample">     #define max(a,b) ((a) &gt; (b) ? (a) : (b))
 </pre>
- <p class="noindent"><a name="index-side-effects_002c-macro-argument-2648"></a>But this definition computes either <var>a</var> or <var>b</var> twice, with bad
+ <p class="noindent"><a name="index-side-effects_002c-macro-argument-2667"></a>But this definition computes either <var>a</var> or <var>b</var> twice, with bad
 results if the operand has side effects.  In GNU C, if you know the
 type of the operands (here taken as <code>int</code>), you can define
 the macro safely as follows:

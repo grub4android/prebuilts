@@ -103,15 +103,15 @@ barrier.
 
      <dl>
 <dt><code>__float128 __builtin_infq (void)</code><dd>Similar to <code>__builtin_inf</code>, except the return type is <code>__float128</code>. 
-<a name="index-g_t_005f_005fbuiltin_005finfq-3696"></a>
+<a name="index-g_t_005f_005fbuiltin_005finfq-3715"></a>
 <br><dt><code>__float128 __builtin_huge_valq (void)</code><dd>Similar to <code>__builtin_huge_val</code>, except the return type is <code>__float128</code>. 
-<a name="index-g_t_005f_005fbuiltin_005fhuge_005fvalq-3697"></a></dl>
+<a name="index-g_t_005f_005fbuiltin_005fhuge_005fvalq-3716"></a></dl>
 
  <p>The following built-in functions are always available and can be used to
 check the target platform type.
 
 <div class="defun">
-&mdash; Built-in Function: void <b>__builtin_cpu_init</b> (<var>void</var>)<var><a name="index-g_t_005f_005fbuiltin_005fcpu_005finit-3698"></a></var><br>
+&mdash; Built-in Function: void <b>__builtin_cpu_init</b> (<var>void</var>)<var><a name="index-g_t_005f_005fbuiltin_005fcpu_005finit-3717"></a></var><br>
 <blockquote><p>This function runs the CPU detection code to check the type of CPU and the
 features supported.  This built-in function needs to be invoked along with the built-in functions
 to check CPU type and features, <code>__builtin_cpu_is</code> and
@@ -141,7 +141,7 @@ don't support constructor priority.
       </blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: int <b>__builtin_cpu_is</b> (<var>const char *cpuname</var>)<var><a name="index-g_t_005f_005fbuiltin_005fcpu_005fis-3699"></a></var><br>
+&mdash; Built-in Function: int <b>__builtin_cpu_is</b> (<var>const char *cpuname</var>)<var><a name="index-g_t_005f_005fbuiltin_005fcpu_005fis-3718"></a></var><br>
 <blockquote><p>This function returns a positive integer if the run-time CPU
 is of type <var>cpuname</var>
 and returns <code>0</code> otherwise. The following CPU names can be detected:
@@ -199,7 +199,7 @@ and returns <code>0</code> otherwise. The following CPU names can be detected:
       </blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: int <b>__builtin_cpu_supports</b> (<var>const char *feature</var>)<var><a name="index-g_t_005f_005fbuiltin_005fcpu_005fsupports-3700"></a></var><br>
+&mdash; Built-in Function: int <b>__builtin_cpu_supports</b> (<var>const char *feature</var>)<var><a name="index-g_t_005f_005fbuiltin_005fcpu_005fsupports-3719"></a></var><br>
 <blockquote><p>This function returns a positive integer if the run-time CPU
 supports <var>feature</var>
 and returns <code>0</code> otherwise. The following features can be detected:

@@ -67,7 +67,7 @@ and all side effects discarded.
 and suitable fallback code always needs to be supplied.
 
 <div class="defun">
-&mdash; RTM Function: unsigned <b>_xbegin</b> ()<var><a name="index-g_t_005fxbegin-3701"></a></var><br>
+&mdash; RTM Function: unsigned <b>_xbegin</b> ()<var><a name="index-g_t_005fxbegin-3720"></a></var><br>
 <blockquote><p>Start a RTM (Restricted Transactional Memory) transaction. 
 Returns _XBEGIN_STARTED when the transaction
 started successfully (note this is not 0, so the constant has to be
@@ -99,19 +99,19 @@ to <code>_xabort</code> is available with <code>_XABORT_CODE(status)</code>
 </dl>
 
 <div class="defun">
-&mdash; RTM Function: void <b>_xend</b> ()<var><a name="index-g_t_005fxend-3702"></a></var><br>
+&mdash; RTM Function: void <b>_xend</b> ()<var><a name="index-g_t_005fxend-3721"></a></var><br>
 <blockquote><p>Commit the current transaction. When no transaction is active this will
 fault. All memory side effects of the transactions will become visible
 to other threads in an atomic matter. 
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; RTM Function: int <b>_xtest</b> ()<var><a name="index-g_t_005fxtest-3703"></a></var><br>
+&mdash; RTM Function: int <b>_xtest</b> ()<var><a name="index-g_t_005fxtest-3722"></a></var><br>
 <blockquote><p>Return a value not zero when a transaction is currently active, otherwise 0. 
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; RTM Function: void <b>_xabort</b> (<var>status</var>)<var><a name="index-g_t_005fxabort-3704"></a></var><br>
+&mdash; RTM Function: void <b>_xabort</b> (<var>status</var>)<var><a name="index-g_t_005fxabort-3723"></a></var><br>
 <blockquote><p>Abort the current transaction. When no transaction is active this is a no-op. 
 status must be a 8bit constant, that is included in the status code returned
 by <code>_xbegin</code>

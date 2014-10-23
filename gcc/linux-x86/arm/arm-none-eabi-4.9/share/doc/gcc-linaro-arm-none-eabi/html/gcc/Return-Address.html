@@ -58,7 +58,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="C-Extensions.html#C-Extensions">C Exten
 function.
 
 <div class="defun">
-&mdash; Built-in Function: void * <b>__builtin_return_address</b> (<var>unsigned int level</var>)<var><a name="index-g_t_005f_005fbuiltin_005freturn_005faddress-3155"></a></var><br>
+&mdash; Built-in Function: void * <b>__builtin_return_address</b> (<var>unsigned int level</var>)<var><a name="index-g_t_005f_005fbuiltin_005freturn_005faddress-3174"></a></var><br>
 <blockquote><p>This function returns the return address of the current function, or of
 one of its callers.  The <var>level</var> argument is number of frames to
 scan up the call stack.  A value of <code>0</code> yields the return address
@@ -84,7 +84,7 @@ purposes.
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: void * <b>__builtin_extract_return_addr</b> (<var>void *addr</var>)<var><a name="index-g_t_005f_005fbuiltin_005fextract_005freturn_005faddr-3156"></a></var><br>
+&mdash; Built-in Function: void * <b>__builtin_extract_return_addr</b> (<var>void *addr</var>)<var><a name="index-g_t_005f_005fbuiltin_005fextract_005freturn_005faddr-3175"></a></var><br>
 <blockquote><p>The address as returned by <code>__builtin_return_address</code> may have to be fed
 through this function to get the actual encoded address.  For example, on the
 31-bit S/390 platform the highest bit has to be masked out, or on SPARC
@@ -95,12 +95,12 @@ executed.
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: void * <b>__builtin_frob_return_address</b> (<var>void *addr</var>)<var><a name="index-g_t_005f_005fbuiltin_005ffrob_005freturn_005faddress-3157"></a></var><br>
+&mdash; Built-in Function: void * <b>__builtin_frob_return_address</b> (<var>void *addr</var>)<var><a name="index-g_t_005f_005fbuiltin_005ffrob_005freturn_005faddress-3176"></a></var><br>
 <blockquote><p>This function does the reverse of <code>__builtin_extract_return_addr</code>. 
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: void * <b>__builtin_frame_address</b> (<var>unsigned int level</var>)<var><a name="index-g_t_005f_005fbuiltin_005fframe_005faddress-3158"></a></var><br>
+&mdash; Built-in Function: void * <b>__builtin_frame_address</b> (<var>unsigned int level</var>)<var><a name="index-g_t_005f_005fbuiltin_005fframe_005faddress-3177"></a></var><br>
 <blockquote><p>This function is similar to <code>__builtin_return_address</code>, but it
 returns the address of the function frame rather than the return address
 of the function.  Calling <code>__builtin_frame_address</code> with a value of

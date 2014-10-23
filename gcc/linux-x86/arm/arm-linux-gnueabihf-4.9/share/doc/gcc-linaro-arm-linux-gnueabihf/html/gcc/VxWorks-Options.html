@@ -54,28 +54,28 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Submodel-Options.html#Submodel-Options"
 
 <h4 class="subsection">3.17.52 VxWorks Options</h4>
 
-<p><a name="index-VxWorks-Options-2540"></a>
+<p><a name="index-VxWorks-Options-2559"></a>
 The options in this section are defined for all VxWorks targets. 
 Options specific to the target hardware are listed with the other
 options for that target.
 
      <dl>
-<dt><code>-mrtp</code><dd><a name="index-mrtp-2541"></a>GCC can generate code for both VxWorks kernels and real time processes
+<dt><code>-mrtp</code><dd><a name="index-mrtp-2560"></a>GCC can generate code for both VxWorks kernels and real time processes
 (RTPs).  This option switches from the former to the latter.  It also
 defines the preprocessor macro <code>__RTP__</code>.
 
-     <br><dt><code>-non-static</code><dd><a name="index-non_002dstatic-2542"></a>Link an RTP executable against shared libraries rather than static
+     <br><dt><code>-non-static</code><dd><a name="index-non_002dstatic-2561"></a>Link an RTP executable against shared libraries rather than static
 libraries.  The options <samp><span class="option">-static</span></samp> and <samp><span class="option">-shared</span></samp> can
 also be used for RTPs (see <a href="Link-Options.html#Link-Options">Link Options</a>); <samp><span class="option">-static</span></samp>
 is the default.
 
-     <br><dt><code>-Bstatic</code><dt><code>-Bdynamic</code><dd><a name="index-Bstatic-2543"></a><a name="index-Bdynamic-2544"></a>These options are passed down to the linker.  They are defined for
+     <br><dt><code>-Bstatic</code><dt><code>-Bdynamic</code><dd><a name="index-Bstatic-2562"></a><a name="index-Bdynamic-2563"></a>These options are passed down to the linker.  They are defined for
 compatibility with Diab.
 
-     <br><dt><code>-Xbind-lazy</code><dd><a name="index-Xbind_002dlazy-2545"></a>Enable lazy binding of function calls.  This option is equivalent to
+     <br><dt><code>-Xbind-lazy</code><dd><a name="index-Xbind_002dlazy-2564"></a>Enable lazy binding of function calls.  This option is equivalent to
 <samp><span class="option">-Wl,-z,now</span></samp> and is defined for compatibility with Diab.
 
-     <br><dt><code>-Xbind-now</code><dd><a name="index-Xbind_002dnow-2546"></a>Disable lazy binding of function calls.  This option is the default and
+     <br><dt><code>-Xbind-now</code><dd><a name="index-Xbind_002dnow-2565"></a>Disable lazy binding of function calls.  This option is the default and
 is defined for compatibility with Diab. 
 </dl>
 
